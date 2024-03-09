@@ -4,22 +4,36 @@
 body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
+    background: #201b2c;
 }
 
 body * {
     box-sizing: border-box;
 }
 
-.main-login {
+.main {
     width: 100vw;
     height: 100vh;
-    background: #201b2c;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.left-login {
+.menu {
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    background: #2f2841;
+}
+
+.footer {
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    background: #2f2841;
+}
+
+.left-screen {
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -28,12 +42,17 @@ body * {
     flex-direction: column;
 }
 
-.left-login > h1 {
+.left-screen > h1 {
     text-align: center;
     color: #77ffc0;
 }
 
-.right-login {
+.left-screen > p {
+    text-align: center;
+    color: #77ffc0;
+}
+
+.right-screen {
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -86,9 +105,25 @@ body * {
     box-sizing: border-box;
 }
 
-.textfield > label {
+.textfield > label, .botton {
     color: #f0ffffde;
     margin-bottom: 10px;
+}
+
+.opc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.opc > .botton {
+    text-decoration: none;
+}
+
+.botton:active {
+    color: #f0ffffa6;
 }
 
 .textfield > input::placeholder {
@@ -118,20 +153,20 @@ body * {
 }
 
 @media only screen and (max-width: 600px) {
-    .main-login {
+    .main {
         flex-direction: column;
     }
 
-    .left-login > h1 {
+    .left-screen > h1 {
         display: none;
     }
 
-    .left-login {
+    .left-screen {
         width: 100%;
         height: auto;
     }
 
-    .right-login {
+    .right-screen {
         width: 100%;
         height: auto;
     }
