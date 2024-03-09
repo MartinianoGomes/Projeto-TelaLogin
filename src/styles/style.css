@@ -33,6 +33,11 @@ body * {
     color: #77ffc0;
 }
 
+.left-login > p {
+    text-align: center;
+    color: #77ffc0;
+}
+
 .right-login {
     width: 50vw;
     height: 100vh;
