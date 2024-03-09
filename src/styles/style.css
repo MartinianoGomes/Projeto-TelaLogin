@@ -91,9 +91,25 @@ body * {
     box-sizing: border-box;
 }
 
-.textfield > label {
+.textfield > label, .botton {
     color: #f0ffffde;
     margin-bottom: 10px;
+}
+
+.opc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.opc > .botton {
+    text-decoration: none;
+}
+
+.botton:active {
+    color: #f0ffffa6;
 }
 
 .textfield > input::placeholder {
